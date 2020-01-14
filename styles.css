@@ -78,3 +78,17 @@ select {
   }
 }
 /************* end of reset section *********/
+
+
+.icon svg {
+    pointer-events: none;
+    display: block;
+    width: 24px; 
+    height: 24px;" 
+}
+.icon-mini svg {
+    pointer-events: none;
+    display: block;
+    width: 24px; 
+    height: 24px;" 
+}
