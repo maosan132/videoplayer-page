@@ -100,18 +100,18 @@ select {
 /****** responsive layout ****/
 
 /* Media Queries: Tablet Landscape */
-/*@media screen and (max-width: 1060px) {
-    .first { width:67%; }
+@media screen and (max-width: 1060px) {
+   /* .first { width:67%; }
     .second { width:30%; margin-left:3%;}
-    .third { width:67%;}  
+    .third { width:67%;}  */
 
 }
 
 /* Media Queries: Tabled Portrait */
-/*@media screen and (max-width: 768px) {
-    .first { width:100%; }
+@media screen and (max-width: 768px) {
+  /*  .first { width:100%; }
     .second { width:100%; margin:0; border:none; }
-    .third { width:100%; }
+    .third { width:100%; }*/
 }
 
 @media (min-width: 640px) { body {font-size:1rem;} } 
@@ -181,9 +181,8 @@ select {
 }
 
 .comments {
-
   padding: 0 10px 0 100px;
-  grid-column: 1 / 2;
+  grid-column: 1 / -1;
   grid-row:  2 / 3;
   grid-area: ;
   background-color: aqua;
