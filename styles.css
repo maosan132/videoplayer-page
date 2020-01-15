@@ -83,7 +83,7 @@ select {
 /************* end of reset section *********/
 
 /**** size of icons ****/
-.icon svg {
+.big-icon svg {
     pointer-events: none;
     display: block;
     width: 24px; 
@@ -101,17 +101,18 @@ select {
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
-    .first { width:67%; }
+   /* .first { width:67%; }
     .second { width:30%; margin-left:3%;}
-    .third { width:67%;}  
+    .third { width:67%;}  */
+    
 
 }
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 768px) {
-    .first { width:100%; }
+  /*  .first { width:100%; }
     .second { width:100%; margin:0; border:none; }
-    .third { width:100%; }
+    .third { width:100%; }*/
 }
 
 @media (min-width: 640px) { body {font-size:1rem;} } 
@@ -137,3 +138,64 @@ select {
 }
 
 /****** end of responsive layout ****/
+
+
+/*******  CSS GRID   ********/
+
+.main {
+  height: 100%;
+  background-color: whitesmoke;
+  display: grid;
+  grid-gap: ;
+  grid-template-columns: repeat (auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  /*grid-template-areas: 
+    'v v v t'
+    'v v v t'
+    'c c c t'  ;
+  justify-content: ;
+  align-content: ;*/
+  min-width: 860px;
+
+} 
+
+
+/*.navbar {
+  grid-column: 1, -1;
+}*/
+
+.video{
+  padding: 0 10px 0 50px;
+  grid-column: 1 / 4;
+  grid-area:;
+  background-color: greenyellow;
+}
+
+.thumbnails {
+  /*max-width: 400px;*/
+  padding: 0 50px 0 10px;
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  grid-area: ;
+  background-color: coral;
+  border: 1px solid black
+}
+
+.comments {
+  padding: 0 10px 0 50px;
+  
+  grid-column: 1 / 4;
+  grid-row:  2 / 3;
+  grid-area: ;
+  background-color: aqua;
+}
+/*******  END OF CSS GRID   ********/
+
+/*****    *******/
+.navbar {
+  background-color: white !important;
+  margin-bottom: 0px !important;
+}
+
+/*****  end of  *******/
