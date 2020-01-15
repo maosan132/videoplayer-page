@@ -145,23 +145,27 @@ select {
   height: 100%;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: ;
+  grid-template-columns: repeat (12 , 1fr);
   grid-template-rows ;
   grid-template-areas: ;
   justify-content: ;
   align-content: ;
-  }
+}
+
+.navbar {
+  grid-column: 1, -1;
+}
 
 .video{
-    grid-column: ;
-  }
+  grid-column: 1, 2;
+}
 
 .thumbnails {
-  grid-column: ;
+  grid-column: 2, -1;
 }
 
 .comments {
-  grid-column: ;
+  grid-column: 1, 2;
 }
 /*******  END OF CSS GRID   ********/
 
