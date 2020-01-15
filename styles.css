@@ -100,7 +100,7 @@ select {
 /****** responsive layout ****/
 
 /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
+/*@media screen and (max-width: 1060px) {
     .first { width:67%; }
     .second { width:30%; margin-left:3%;}
     .third { width:67%;}  
@@ -108,7 +108,7 @@ select {
 }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .first { width:100%; }
     .second { width:100%; margin:0; border:none; }
     .third { width:100%; }
@@ -143,11 +143,12 @@ select {
 
 .main {
   height: 100%;
-  
+  background-color: whitesmoke;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 75% 25%;
-  grid-template-rows 500px 500px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: dense;
   /*grid-template-areas: 
     'v v v t'
     'v v v t'
@@ -155,31 +156,33 @@ select {
   justify-content: ;
   align-content: ;*/
   min-width: 860px;
-}
+} 
+
 
 /*.navbar {
   grid-column: 1, -1;
 }*/
 
 .video{
-  padding: 0 10px 0 100px;
+  p-adding: 0 10px 0 100px;
   grid-column: 1 / 2;
   grid-area:;
-  grid-row: 1 / 2;
   background-color: greenyellow;
 }
 
 .thumbnails {
-  padding: 0 200px 0 10px;
-  grid-column: 2 / -1;
+  /*max-width: 400px;*/
+  marg-in: 0 100px 0 10px;
+  grid-column: 2 / 3;
   grid-row: 1 / 3;
   grid-area: ;
-  background-color: coral
+  background-color: coral;
+  border: 1px solid black
 }
 
 .comments {
 
-  padding: 0 10px 0 100px;
+  pad-ing: 0 10px 0 100px;
   grid-column: 1 / 2;
   grid-row:  2 / 3;
   grid-area: ;
@@ -187,3 +190,9 @@ select {
 }
 /*******  END OF CSS GRID   ********/
 
+/*****    *******/
+.navbar {
+  background-color: white !important;
+}
+
+/*****  end of  *******/
