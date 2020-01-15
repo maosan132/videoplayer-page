@@ -54,7 +54,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img {
   max-width: 100%;
-  display: block;
+  display: ;
   height: auto; 
 }
 
@@ -149,10 +149,7 @@ select {
     'c c c t'  ;
   */
   min-width: 860px;
-
 } 
-
-
 /*.navbar {
   grid-column: 1, -1;
 }*/
@@ -198,12 +195,13 @@ div.likings {
   float: left;
 }
 div.icon {
-  display: inline !important;
+  float: left;
+  margin: 5px 0 5px 15px;
+  /*display: inline !important;*/
 }
-.
-
-
-
+.right-info .likings {
+  float: left;
+}
 /**.big-icon{
   background-image: url(/like-icon.png);
   background-repeat: no-repeat;
@@ -211,6 +209,16 @@ div.icon {
   width: 24px;
   height: 24px;
 }*/
+.link {
+  margin-left:30px
+}
+.cls {
+  clear: both;
+}
+.divisor {
+  margin: 0 0 0 0;
+  border-top: 1px dotted gray;
+}
 /*****  end of assorted styles *******/
 
 
