@@ -54,7 +54,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img {
   max-width: 100%;
-  display: block;
+  display: ;
   height: auto; 
 }
 
@@ -83,15 +83,11 @@ select {
 /************* end of reset section *********/
 
 /**** size of icons ****/
-.big-icon svg {
-    pointer-events: none;
-    display: block;
+.big-icon img{
     width: 24px; 
     height: 24px;
 }
-.icon-mini svg {
-    pointer-events: none;
-    display: block;
+.mini-icon img{
     width: 16px; 
     height: 16px;
 }
@@ -104,8 +100,6 @@ select {
    /* .first { width:67%; }
     .second { width:30%; margin-left:3%;}
     .third { width:67%;}  */
-    
-
 }
 
 /* Media Queries: Tabled Portrait */
@@ -140,27 +134,22 @@ select {
 /****** end of responsive layout ****/
 
 
-/*******  CSS GRID   ********/
+/*******  CSS GRID FOR MAIN ELEMENTS********/
 
 .main {
   height: 100%;
   background-color: whitesmoke;
   display: grid;
-  grid-gap: ;
-  grid-template-columns: repeat (auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat (auto-fill, minmax(100px, 1fr));
   grid-auto-rows: auto;
-  grid-auto-flow: dense;
+  grid-auto-flow: row;
   /*grid-template-areas: 
     'v v v t'
     'v v v t'
     'c c c t'  ;
-  justify-content: ;
-  align-content: ;*/
+  */
   min-width: 860px;
-
 } 
-
-
 /*.navbar {
   grid-column: 1, -1;
 }*/
@@ -168,34 +157,110 @@ select {
 .video{
   padding: 0 10px 0 50px;
   grid-column: 1 / 4;
-  grid-area:;
-  background-color: greenyellow;
 }
 
 .thumbnails {
   /*max-width: 400px;*/
-  padding: 0 50px 0 10px;
+  /*padding: 0 50px 0 10px;*/
   grid-column: 4 / 5;
   grid-row: 1 / 3;
-  grid-area: ;
-  background-color: coral;
   border: 1px solid black
 }
 
 .comments {
-  padding: 0 10px 0 50px;
-  
+  padding: 0 10px 0 50px;  
   grid-column: 1 / 4;
   grid-row:  2 / 3;
-  grid-area: ;
-  background-color: aqua;
 }
-/*******  END OF CSS GRID   ********/
+/*******  END OF CSS GRID FOR MAIN ELEMENTS ********/
 
-/*****    *******/
+/*****   assorted styles *******/
 .navbar {
   background-color: white !important;
   margin-bottom: 0px !important;
 }
+h5.video-title {
+  font-size: large;
+ }
+.right-info .likings {
+  border-bottom: grey 2px solid;
+}
+.right-info {
+  float: right;
+}
+.left-info{
+  float: left;
+}
+div.icon {
+  float: left;
+  margin: 5px 0 5px 15px;
+  /*display: inline !important;*/
+}
 
-/*****  end of  *******/
+.right-info .likings {
+  float: left;
+}
+/**.big-icon{
+  background-image: url(/like-icon.png);      NEED TO CALL IMAGES FROM CSS -- PENDING
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 24px;
+  height: 24px;
+}*/
+.link {
+  margin-left:30px
+}
+.cls {
+  clear: both;
+}
+.divisor {
+  margin: 0 0 0 0;
+  border-top: 1px dotted gray;
+}
+
+a.nolink {
+  text-decoration: inherit;
+  color: #333;
+  
+}
+/*****  end of assorted styles *******/
+
+
+
+/******* CSS-GRID FOR INNER ELEMENTS ********/
+
+/* publisher */
+
+.publisher {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: auto;
+
+  min-width: 860px;
+} 
+.avatar-icon{
+  grid-column: 1 / 3;
+}
+.avatar-info{
+  grid-column: 3 / 11;
+}
+.suscribe{
+  grid-column: 11 / 13;}
+
+/* comments */
+.comments-block {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat (190, 1fr);
+  grid-template-rows: auto;
+  min-width: 860px;
+} 
+.commenter-icon{
+  grid-column: 1 / 2;  
+}
+.commenter-info{
+  grid-column: 2 / 191;
+}
+
+/******* END OF CSS-GRID FOR INNER ELEMENTS ********/
