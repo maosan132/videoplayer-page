@@ -188,7 +188,7 @@ select {
 h5.video-title {
   font-size: large;
  }
-span.likings {
+div.likings {
   border-bottom: grey 2px solid;
 }
 .right-info {
@@ -197,6 +197,13 @@ span.likings {
 .left-info{
   float: left;
 }
+div.icon {
+  display: inline !important;
+}
+.
+
+
+
 /**.big-icon{
   background-image: url(/like-icon.png);
   background-repeat: no-repeat;
