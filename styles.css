@@ -196,10 +196,20 @@ select {
   margin-bottom: 0px !important;
 }
 h5.video-title {
-  
+  font-size: large;
+ 
 }
-
+span.likings {
+  border-bottom: grey 2px solid;
+}
+.right-info {
+  float: right;
+}
+.left-info{
+  float: left;
+}
 /*****  end of assorted styles *******/
+
 
 
 /******* CSS-GRID FOR INNER ELEMENTS ********/
