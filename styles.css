@@ -143,15 +143,18 @@ select {
 
 .main {
   height: 100%;
+  
   display: grid;
   grid-gap: 5px;
-  /*grid-template-columns: repeat (12 , 1fr);
-  grid-template-rows 40px, auto, auto;*/
-  grid-template-areas: 
-    'left main right'
-    'left main right'  ;
-  /*justify-content: ;
+  grid-template-columns: 75% 25%;
+  grid-template-rows 500px 500px;
+  /*grid-template-areas: 
+    'v v v t'
+    'v v v t'
+    'c c c t'  ;
+  justify-content: ;
   align-content: ;*/
+  min-width: 860px;
 }
 
 /*.navbar {
@@ -159,16 +162,28 @@ select {
 }*/
 
 .video{
-  /*grid-column: 1, 9;*/
-  grid-area: left;
+  padding: 0 10px 0 100px;
+  grid-column: 1 / 2;
+  grid-area:;
+  grid-row: 1 / 2;
+  background-color: greenyellow;
 }
 
 .thumbnails {
-  grid-column: 9, 13;
+  padding: 0 200px 0 10px;
+  grid-column: 2 / -1;
+  grid-row: 1 / 3;
+  grid-area: ;
+  background-color: coral
 }
 
 .comments {
-  grid-column: 1, 9;
+
+  padding: 0 10px 0 100px;
+  grid-column: 1 / 2;
+  grid-row:  2 / 3;
+  grid-area: ;
+  background-color: aqua;
 }
 /*******  END OF CSS GRID   ********/
 
