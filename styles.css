@@ -145,7 +145,7 @@ select {
   height: 100%;
   background-color: whitesmoke;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: ;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto auto;
   grid-auto-flow: dense;
@@ -164,7 +164,7 @@ select {
 }*/
 
 .video{
-  p-adding: 0 10px 0 100px;
+  padding: 0 10px 0 100px;
   grid-column: 1 / 2;
   grid-area:;
   background-color: greenyellow;
@@ -172,7 +172,7 @@ select {
 
 .thumbnails {
   /*max-width: 400px;*/
-  marg-in: 0 100px 0 10px;
+  padding: 0 100px 0 10px;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   grid-area: ;
@@ -182,7 +182,7 @@ select {
 
 .comments {
 
-  pad-ing: 0 10px 0 100px;
+  padding: 0 10px 0 100px;
   grid-column: 1 / 2;
   grid-row:  2 / 3;
   grid-area: ;
@@ -193,6 +193,7 @@ select {
 /*****    *******/
 .navbar {
   background-color: white !important;
+  margin-bottom: 0px !important;
 }
 
 /*****  end of  *******/
