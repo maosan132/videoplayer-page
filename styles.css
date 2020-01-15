@@ -137,3 +137,31 @@ select {
 }
 
 /****** end of responsive layout ****/
+
+
+/*******  CSS GRID   ********/
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: ;
+  grid-template-rows ;
+  grid-template-areas: ;
+  justify-content: ;
+  align-content: ;
+  }
+
+.video{
+    grid-column: ;
+  }
+
+.thumbnails {
+  grid-column: ;
+}
+
+.comments {
+  grid-column: ;
+}
+/*******  END OF CSS GRID   ********/
+
