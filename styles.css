@@ -96,16 +96,10 @@ select {
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
-   /* .first { width:67%; }
-    .second { width:30%; margin-left:3%;}
-    .third { width:67%;}  */
 }
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 768px) {
-  /*  .first { width:100%; }
-    .second { width:100%; margin:0; border:none; }
-    .third { width:100%; }*/
 }
 
 @media (min-width: 640px) { body {font-size:1rem;} } 
@@ -142,28 +136,16 @@ select {
   grid-template-columns: repeat (auto-fill, minmax(100px, 1fr));
   grid-auto-rows: auto;
   grid-auto-flow: row;
-  /*grid-template-areas: 
-    'v v v t'
-    'v v v t'
-    'c c c t'  ;
-  */
   min-width: 720px;
 } 
-/*.navbar {
-  grid-column: 1, -1;
-}*/
-
 .video{
   padding: 0 10px 0 50px;
   grid-column: 1 / 4;
 }
 
 .thumbnails {
-  /*max-width: 400px;*/
-  /*padding: 0 50px 0 10px;*/
   grid-column: 4 / 5;
   grid-row: 1 / 3;
-  border: 1px solid black
 }
 
 .comments {
@@ -193,19 +175,12 @@ h5.video-title {
 div.icon {
   float: left;
   margin: 0 0 5px 15px;
-  /*display: inline !important;*/
 }
 
 .right-info .likings {
   float: left;
 }
-/**.big-icon{
-  background-image: url(/like-icon.png);      NEED TO CALL IMAGES FROM CSS -- PENDING
-  background-repeat: no-repeat;
-  background-position: left top;
-  width: 24px;
-  height: 24px;
-}*/
+
 .link {
   color: #333;
   }
