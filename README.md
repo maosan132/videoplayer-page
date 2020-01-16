@@ -1,4 +1,4 @@
-# Video Player Pagevideo
+# Video Player Page
 
 This project was made using HTML and CSS.
 
