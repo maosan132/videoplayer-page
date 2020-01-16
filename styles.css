@@ -208,7 +208,10 @@ div.icon {
 }*/
 .link {
   color: #333;
-}
+  }
+.comments-block .icon.likes{
+  margin-left:0px;
+} 
 .cls {
   clear: both;
 }
@@ -255,9 +258,15 @@ img.rounded {
 div.comments.third h6 {
   font-size: large;
   }
+
+.publisher {
+  height: 20px;
+}
+
+.comments-block{
+  margin-bottom: 20px;
+}
 /*****  end of assorted styles *******/
-
-
 
 /******* CSS-GRID FOR INNER ELEMENTS ********/
 
@@ -281,6 +290,7 @@ div.comments.third h6 {
   grid-column: 11 / 13;}
 
 /* comments */
+
 .comments-block {
   height: 100%;
   display: grid;
