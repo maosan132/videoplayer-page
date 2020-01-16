@@ -208,7 +208,10 @@ div.icon {
 }*/
 .link {
   color: #333;
-}
+  }
+.comments-block .icon.likes{
+  margin-left:0px;
+} 
 .cls {
   clear: both;
 }
@@ -258,6 +261,10 @@ div.comments.third h6 {
 
 .publisher {
   height: 20px;
+}
+
+.comments-block{
+  margin-bottom: 20px;
 }
 /*****  end of assorted styles *******/
 
