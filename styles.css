@@ -241,6 +241,10 @@ div.comments.third h6 {
 .comments-block{
   margin-bottom: 20px;
 }
+
+.navbar-right li {
+  margin-top: 10px;
+}
 /*****  end of assorted styles *******/
 
 /******* CSS-GRID FOR INNER ELEMENTS ********/
