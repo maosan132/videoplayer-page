@@ -255,9 +255,11 @@ img.rounded {
 div.comments.third h6 {
   font-size: large;
   }
+
+.publisher {
+  height: 20px;
+}
 /*****  end of assorted styles *******/
-
-
 
 /******* CSS-GRID FOR INNER ELEMENTS ********/
 
@@ -281,6 +283,7 @@ div.comments.third h6 {
   grid-column: 11 / 13;}
 
 /* comments */
+
 .comments-block {
   height: 100%;
   display: grid;
