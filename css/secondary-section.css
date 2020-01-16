@@ -1,0 +1,23 @@
+.autoplay {
+  display: grid;
+  grid-template-rows: 22px, 125px, 20px;
+}
+
+.videos {
+  display: grid;
+  grid-gap: 8px;
+  grid-auto-rows: 102px;
+}
+
+.item {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 172px auto;
+  grid-template-rows: 100px;
+}
+
+.v-thumbnail {
+  display: grid;
+  margin: 0px;
+  padding: 0px;
+}
